@@ -1,0 +1,287 @@
+html {
+	font-size: 14px;
+}
+
+body {
+	width: 100%;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+		 url('fonts/bebasneue_regular-webfont.woff') format('woff');
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+.right {
+	float: right;
+}
+
+.cf:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.cf {
+	zoom: 1;
+}
+
+.verticalCenter {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.horizontalCenter {
+	text-align: center;
+}
+
+/*Block1 Header*/
+header {
+	width: 100%;
+	min-height: 500px; 
+	color: white;
+	background: url(img/header.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.contentWrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header .contentWrapper {
+	display: table;
+	min-height: inherit;
+	padding-left: 68px;
+}
+
+header h1 {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+	font-size: 6.53rem;
+	line-height: 0.75;
+	margin: 0;
+	text-shadow: 0 0 1px rgb(0, 0, 0);
+	text-transform: uppercase;
+}
+
+header h2 {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+	font-size: 2.8rem;
+	line-height: 0.75;
+	letter-spacing: -0.7px;
+	margin: 0;
+	text-shadow: 0 0 1px rgb(0, 0, 0);
+	text-transform: uppercase;
+}
+/*/Block1 Header*/
+
+/*Block2 Menu*/
+div.nav {
+	background-color: rgb(37, 34, 34);
+	width: 100%;
+}
+
+.nav .contentWrapper {
+	padding-left: 35px;
+}
+
+.nav .logo/*, .nav nav, .nav .socials */{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.nav .middle {
+	line-height: 100px;
+}
+
+.nav .logo, nav a {
+	color: rgb(255, 255, 255);
+	font-family: 'BebasNeue', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav .logo {
+	font-size: 3.5rem;
+	float: left;
+}
+
+.nav .logo:hover {
+	color: rgb(101, 186, 153);
+}
+
+nav {
+	margin-right: 53px;
+	margin-top: 2px;
+}
+
+nav a {
+	font-size: 1.3rem;
+	padding: 15px 5px;
+	margin-right: 15px;
+}
+
+nav a:hover {
+	color: rgb(101, 186, 153);
+	border-bottom: 1px solid rgb(101, 186, 153);
+	cursor: pointer;
+}
+
+.nav nav, .nav .socials {
+	display: inline-block;
+}
+
+nav, .socials {
+	vertical-align: middle;
+}
+.socials {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.socials li {
+	display: inline-block;
+	margin-right: 9px;
+}
+
+.socials li:last-child {
+	margin-right: 10px;
+}
+
+.socials a{
+	background-color: rgb(255,255,255);
+	border-radius: 50%;
+	text-decoration: none;
+	color: rgb(37, 34, 34); /*like div.nav background-color*/
+	width: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.socials a:hover {
+	background-color: rgb(101, 186, 153);
+}
+/*/Block2 Menu*/
+
+/*Block3 Portfolio*/
+.portfolio {
+	width: 100%;
+	color: white;
+	background-color: rgb(101, 186, 153);
+}
+.portfolio .contentWrapper {
+	padding: 50px 1% 100px 1%;
+}
+
+.portfolio h1 {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: normal;
+	font-size: 3.4rem;
+	letter-spacing: 0.4px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.portfolio a {
+	display: inline-block;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 1.6rem;
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	padding: 4px 2px;
+	margin-bottom: 40px;
+}
+
+.wrapper {
+	position: relative;
+	/*display: inline-block;*/
+	float: left;
+	width: 49%;
+}
+
+.halfImage {
+	width: 100%;
+}
+
+.height255 {
+	height: 255px;
+}
+
+.height235 {
+	height: 235px;
+}
+
+.quaterImage {
+	width: 50%;
+	height: 235px;
+}
+
+.content {
+	position: relative;
+	float: left;
+}
+
+.content>img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.toolsContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(101, 186, 153);
+	opacity: 0.85;
+	/* display: none; */
+}
+
+/* .content:hover .toolsContainer {
+	display: initial;
+} */
+
+.zoom {
+	position: absolute;
+	top: 43%;
+	left: 44%;
+	cursor: pointer;
+}
+
+.otherTools {
+	position: absolute;
+	top: 79%;
+	width: 100%;
+	text-align: center;
+/*	left: 23%;*/
+}
+
+.otherTools img {
+	margin: 0 2%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.zoom, .otherTools img {
+	transition: zoom 3s;
+}
+
+.zoom:hover, .otherTools img:hover {
+	zoom: 1.3;
+}
